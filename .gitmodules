@@ -1,0 +1,4 @@
+[submodule "overlay"]
+	path = overlay
+	branch = pie
+	url = https://github.com/ZeekoZhu/xiaoxin_pad_j716f_hardware_overlay.git

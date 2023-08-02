@@ -1,7 +1,7 @@
-id=MMT-Ex
-name=Magisk Module Template Extended
-version=v3.1
-versionCode=13
-author=Zackptg5
-description=Magisk Module Template Extended
-updateJson=https://raw.githubusercontent.com/Zackptg5/MMT-Extended/master/update.json
+id=zeeko.lenovo-j716f.gsi-fix
+name=Lenovo J716F GSI Fix
+version=v0.1
+versionCode=1
+author=Zeeko Zhu
+description=Fix auto brightness for Lenovo J716F on GSI system
+updateJson=https://raw.githubusercontent.com/ZeekoZhu/lenovo-j716f-gsi-fix/master/update.json
