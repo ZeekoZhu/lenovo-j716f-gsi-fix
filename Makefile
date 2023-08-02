@@ -5,17 +5,28 @@ build:
 pack:
 	# Create dist dir if not exists
 	if [ ! -d dist ]; then mkdir dist; fi
+	# Get version code, it should be read from module.prop
+	ver_code=$(shell grep -E '^versionCode=' module.prop | cut -d '=' -f 2) \
+	inc=1 \
+	next_ver_code=$$((ver_code + inc)) \
+	# replace <version> in module.prop.tpl \
+	# replace <versionCode> in module.prop.tpl \
+	sed -e "s/<version>/$$ver/g" \
+		-e "s/<versionCode>/$$next_ver_code/g" \
+		module.prop.tpl > module.prop && \
+	# replace <version> in update.json \
+	# replace <versionCode> in module.prop.tpl \
+	sed -e "s/<version>/$$ver/g" \
+		-e "s/<versionCode>/$$next_ver_code/g" \
+		update.json.tpl > update.json
+	
 	zip -r -9 -q dist/lenovo-j716f-gsi-fix-$(ver).zip \
-		changelog.md \
 		common \
 		customize.sh \
-		LICENSE \
 		META-INF \
 		module.prop \
-		README.md \
 		system \
-		uninstall.sh \
-		update.json
+		uninstall.sh
 	@echo "Done! Please checkout dist/lenovo-j716f-gsi-fix-$(ver).zip"
 
 clean:
