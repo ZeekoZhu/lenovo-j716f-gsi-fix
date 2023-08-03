@@ -1,37 +1,15 @@
-<h1 align="center">Magisk Module Template Extended (MMT-Ex)</h1>
+Lenovo J716F GSI Fix
 
-<div align="center">
-  <!-- Version -->
-    <img src="https://img.shields.io/badge/Version-v3.1-blue.svg?longCache=true&style=popout-square"
-      alt="Version" />
-  <!-- Last Updated -->
-    <img src="https://img.shields.io/badge/Updated-July 25, 2023-green.svg?longCache=true&style=flat-square"
-      alt="_time_stamp_" />
-  <!-- Min Magisk -->
-    <img src="https://img.shields.io/badge/MinMagisk-20.4-red.svg?longCache=true&style=flat-square"
-      alt="_time_stamp_" /></div>
+*A magisk module fix the auto brightness, lowest brightness level, and double tap to wake up (aka. DT2W) problems with [phh GSI](https://github.com/phhusson/treble_experimentations/wiki/Generic-System-Image-%28GSI%29-list) ROM*
 
-<div align="center">
-  <strong>MMT Extended is the spiritual successor of Unity and makes magisk module creation easy. Instructions in the 
-    <h3><a href="https://github.com/Zackptg5/MMT-Extended/wiki">Wiki</a></h3><h4>Also supports KSU</h4>
-</div>
+## Download
 
-<div align="center">
-  <h3>
-    <a href="https://github.com/Zackptg5/MMT-Extended">
-      Source Code
-    </a>
-    <span> | </span>
-    <a href="https://github.com/Zackptg5/MMT-Extended-Addons">
-      Addons Repository
-    </a>
-    <span> | </span>
-    <a href="https://forum.xda-developers.com/apps/magisk/magisk-module-template-extended-mmt-ex-t4029819">
-      XDA
-    </a>
-  </h3>
-</div>
+You can download the latest module from the [releases page](https://github.com/ZeekoZhu/lenovo-j716f-gsi-fix/releases).
 
-### Usage
+## WIP
+
+- [ ] Magnetic Screen Lock
+
+## Development
 - [Follow the directions here (DO NOT FORK)](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template)
 - Then follow instructions in [Wiki](https://github.com/Zackptg5/MMT-Extended/wiki)
